@@ -20,7 +20,7 @@ configuration: Release
 
 init:
 # Clone last AOM code (Is different from the appveyor git clone)
-- git clone -b master --depth 1 https://aomedia.googlesource.com/aom c:\projects\aom_src
+- git clone -b master --depth 25 https://aomedia.googlesource.com/aom c:\projects\aom_src
 - SET PATH=C:\Python38-x64;%PATH%
 
 # Change appveyor to know last aom commit
