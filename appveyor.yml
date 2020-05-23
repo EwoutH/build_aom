@@ -4,14 +4,14 @@ environment:
   aom_options: " -Thost=x64 -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=OFF -DENABLE_TESTDATA=OFF -DENABLE_DOCS=OFF -DENABLE_TOOLS=OFF "
 
   matrix:
-#  - arch: ARM64
-#    aom_extra_options: " -DAOM_TARGET_CPU=arm64 "
+  - arch: ARM64
+    aom_extra_options: " -DAOM_TARGET_CPU=arm64 "
   - arch: x64
     aom_extra_options: " -DENABLE_NASM=ON "
 
-branches:
-  only:
-  - master
+#branches:
+#  only:
+#  - master
 
 skip_tags: true
 clone_depth: 1
